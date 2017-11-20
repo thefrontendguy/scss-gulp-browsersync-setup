@@ -1,29 +1,53 @@
-@font-face {
-	font-family: 'PS bold';
-	src: url('fonts/ProductSans-Bold.eot');
-	src: url('fonts/ProductSans-Bold.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ProductSans-Bold.woff') format('woff'),
-		url('fonts/ProductSans-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto');
 
-@font-face {
-	font-family: 'PS';
-	src: url('fonts/ProductSans-Regular.eot');
-	src: url('fonts/ProductSans-Regular.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ProductSans-Regular.woff') format('woff'),
-		url('fonts/ProductSans-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+
 #page-proxy-favicon {
 	display: none !important;
 }
-.body {
-	font-family: PS;
+
+$body_font: 'Roboto', sans-serif;
+$color1: rgb(80, 143, 38);
+$color2: #000;
+$color3: rgb(255, 255, 0);
+
+@mixin box_shadow {
+
 }
 
-props {
-	margin-left: 25px;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $body_font;
+}
+
+header {
+	background-color: rgba($color2, .1);
+	padding: 20px;
+	@include box_shadow;
+
+}
+a {
+	text-decoration: none;
+}
+nav {
+	background-color: lightblue;
+	padding: 20px;
+	@include box_shadow;
+
+	display: flex;
+	justify-content: flex-start;
+
+	& a {
+		color: red;
+		background: blue;
+		margin-right: 2px;
+		padding: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: $color1;
+		} 
+	}
 }
