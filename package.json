@@ -1,0 +1,20 @@
+{
+  "name": "css-experiments",
+  "version": "10000.0.0",
+  "description": "A simple guessing game.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cahit Kaya",
+  "license": "ISC",
+  "keywords": []
+}
